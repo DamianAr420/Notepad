@@ -1,0 +1,208 @@
+.homeHeader {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(199, 199, 199);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+.menuIcon, .sortIcon, .favoriteIcon {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.search {
+    height: 40%;
+}
+
+.sideMenu {
+    width: 50vw;
+    height: 100vh;
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    left: -50vw;
+    transition: left 0.3s ease;
+    overflow-x: hidden;
+    padding-top: 60px;
+    z-index: 2;
+}
+
+.sideMenu.open {
+    left: 0;
+}
+
+.sideMenu div {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: color 0.3s;
+}
+
+.sideMenu div:hover {
+    color: #f1f1f1;
+}
+
+.menuIcon {
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}  
+
+.addNewNote {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(72, 255, 0);
+}
+
+.addNewNote img {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+.addNewNote img:hover {
+    transition: 0.3s;
+    transform: rotate(90deg) translate(-50%, 50%);
+}
+
+#close {
+    width: 25vw;
+    height: 4vh;
+    line-height: 4vh;
+    text-align: center;
+    font-weight: bold;
+    font-size: 120%;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+#noteName {
+    width: 100%;
+    height: 10%;
+    border-style: none;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 160%;
+    background-color: rgb(82, 82, 82);
+}
+
+#noteDesc {
+    width: 100%;
+    height: 87%;
+    margin-top: 5%;
+    border-style: none;
+    font-size: 18px;
+    background-color: rgb(82, 82, 82);
+    resize: none;
+}
+
+#noteType {
+    width: 25vw;
+    height: 4vh;
+    font-weight: bold;
+    font-size: 120%;
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    transform: translate(-50%, 0%);
+}
+
+#save {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 25vw;
+    height: 4vh;
+    line-height: 4vh;
+    text-align: center;
+    font-size: 120%;
+    font-weight: bold;
+    background-color: greenyellow;
+}
+
+.note {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 80vh;
+}
+
+#addNewNoteForm {
+    display: none;
+}
+
+.textStyles {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 7vh;
+    left: 5px;
+    width: calc(100vw - 10px);
+    height: 5vh;
+}
+
+.fontSize, .listStyle, .fontWeight {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fontSizeInput {
+    width: 50px;
+}
+
+.listStyle select {
+    width: 50px;
+    margin: 0 auto;
+}
+
+.fontWeight {
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fontWeight:hover {
+    box-shadow: 0px 0px 2px 2px rgb(90, 90, 90);
+}
+  
