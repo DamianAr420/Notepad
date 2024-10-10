@@ -1,0 +1,120 @@
+.page {
+    background-color: #111;
+    min-height: 100%;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100vw;
+    text-align: center;
+    height: 7vw;
+    font-size: 5vw;
+    font-weight: bold;
+    line-height: 7vw;
+    background-color: rgb(0, 0, 0);
+    color: #00ffea;
+    text-shadow: 0 0 10px #fff, 0 0 20px #818181, 0 0 30px #00ffea;
+}
+
+.body {
+    width: 100vw;
+    background-color: #111;
+}
+
+.newNote {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 120%;
+    background-color: #00ffea;
+    border-radius: 15px;
+    border: 2px solid #111;
+    cursor: pointer;
+}
+
+.newNote:hover {
+    background-color: #00d1c0;
+}
+
+.note {
+    width: 80%;
+    max-width: 820px;
+    min-height: 100px;
+    background-color: #00ffea;
+    color: #111;
+    margin: 2% auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 0px #ffffff;
+    padding: 2%;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    max-height: 100px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.note.open {
+    max-height: 100%;
+    max-width: 1000px;
+}
+
+.note:hover {
+    box-shadow: 0px 0px 25px 5px #00ffea;
+}
+
+.note h1 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #111;
+}
+
+.note p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.note button {
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit {
+    background-color: #a200ff;
+}
+
+.edit:hover {
+    background-color: #8b00e6;
+}
+
+.delete {
+    background-color: rgb(253, 31, 31);
+}
+
+.delete:hover {
+    background-color: rgb(220, 20, 20);
+}

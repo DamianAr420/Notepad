@@ -1,0 +1,111 @@
+.editNoteBox {
+    z-index: 1000;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    color: white;
+}
+
+.editTitleBox {
+    width: 80%;
+    max-width: 850px;
+    height: auto;
+    background-color: #222;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+    margin-bottom: 2vw;
+    box-shadow: 0px 0px 15px #a200ff;
+}
+
+.editTitleBox input {
+    width: 50%;
+    height: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.5em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.editTitleBox input:focus {
+    background-color: #444;
+}
+
+.editSave, .editClose {
+    width: 20%;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.editSave {
+    background-color: #28a745;
+    color: white;
+}
+
+.editSave:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.editClose {
+    background-color: #dc3545;
+    color: white;
+}
+
+.editClose:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.editDescBox {
+    width: 80%;
+    max-width: 850px;
+    height: auto;
+    background-color: #222;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    box-shadow: 0px 0px 15px #a200ff;
+}
+
+.editDescBox textarea {
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    resize: none;
+    transition: background-color 0.3s ease;
+}
+
+.editDescBox textarea:focus {
+    background-color: #444;
+}
